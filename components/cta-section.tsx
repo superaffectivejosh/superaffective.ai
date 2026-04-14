@@ -13,7 +13,7 @@ export function CtaSection() {
         <p className="max-w-2xl text-base leading-7 text-white/72 sm:text-lg">
           Superaffective AI is powered by YOU! Reach out to our team and learn about joining the Superaffective Movement.
         </p>
-        <Button isPlaceholder disabled className="mt-2 min-w-[240px] sm:min-w-[280px] sm:text-lg">
+        <Button disabled className="mt-2 min-w-[240px] sm:min-w-[280px] sm:text-lg">
           Join The Movement
         </Button>
       </div>
