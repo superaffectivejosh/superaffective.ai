@@ -14,7 +14,7 @@ export function VideoSection() {
           </h3>
 
           <p className="mt-5 w-full max-w-3xl text-center text-base leading-7 text-white/74 sm:text-lg sm:leading-8">
-            &quot;KPop Demon Hunters&quot; is the hit 2025 Netflix movie that became the most popular animated movie on Netflix of all time. &quot;Golden&quot; is the #1 song from &quot;KPop Demon Hunters&quot; with over 1B views on YouTube in 2026. Enjoy this &quot;Golden&quot; EDM Festival Anthem Remix by the popular EDM DJ W&W. Get Lit On KPop!
+            &quot;KPop Demon Hunters&quot; is the hit 2025 Netflix movie that became the most popular animated movie on Netflix of all time. &quot;Golden&quot; is the #1 song from &quot;KPop Demon Hunters&quot; with over 1B views on YouTube. Enjoy this &quot;Golden&quot; EDM Festival Anthem Remix by the popular EDM DJ W&W. Get Lit On KPop!
           </p>
         </div>
 
