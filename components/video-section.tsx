@@ -24,9 +24,10 @@ export function VideoSection() {
               <div className="relative w-full overflow-hidden pt-[56.25%]">
                 <iframe
                   className="absolute inset-0 h-full w-full"
-                  src="https://www.youtube.com/embed/nJGW56TjFLM"
+                  src="https://www.youtube-nocookie.com/embed/nJGW56TjFLM"
                   title="K-Pop Demon Hunters Superaffective Movement Festival Anthem Remix"
                   loading="lazy"
+                  sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
