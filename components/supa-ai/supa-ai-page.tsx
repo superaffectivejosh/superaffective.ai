@@ -119,50 +119,69 @@ function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_65%_20%,rgba(126,242,238,0.2),transparent_28%),linear-gradient(180deg,rgba(8,3,26,0.06)_0%,rgba(8,3,26,0.28)_42%,rgba(8,3,26,0.9)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,7,38,0.88)_0%,rgba(18,7,38,0.52)_42%,rgba(18,7,38,0.14)_100%)]" />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-10 pt-28 sm:px-8 md:pb-14 lg:px-12">
-        <article className="max-w-4xl rounded-[2rem] border border-white/10 bg-black/18 p-6 shadow-[0_20px_90px_rgba(0,0,0,0.34)] backdrop-blur-[10px] sm:p-8 md:p-10 lg:p-12">
-          <div className="mb-8 flex flex-wrap gap-3 text-base font-medium uppercase tracking-[0.2em] text-white/78 sm:text-lg">
-            <span className="rounded-full border border-white/15 bg-white/10 px-5 py-2.5">Supa AI</span>
-            <span className="rounded-full border border-[#7ef2ee]/30 bg-[#7ef2ee]/12 px-5 py-2.5 text-[#d8fffb]">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-8 pt-28 sm:px-8 sm:pb-12 md:pb-14 lg:px-12">
+        <article className="flex max-w-4xl flex-col gap-7 rounded-[2rem] border border-white/10 bg-black/20 p-6 shadow-[0_20px_90px_rgba(0,0,0,0.34)] backdrop-blur-[12px] sm:gap-8 sm:p-8 md:gap-9 md:p-10 lg:p-12">
+          <div className="flex flex-wrap gap-2.5 text-sm font-medium uppercase tracking-[0.18em] text-white/78 sm:gap-3 sm:text-base md:text-lg">
+            <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 sm:px-5 sm:py-2.5">
+              Supa AI
+            </span>
+            <span className="rounded-full border border-[#7ef2ee]/30 bg-[#7ef2ee]/12 px-4 py-2 text-[#d8fffb] sm:px-5 sm:py-2.5">
               AI Video Model Launch
             </span>
-            <span className="rounded-full border border-[#fff7d6]/30 bg-[#fff7d6]/12 px-5 py-2.5 text-[#fff7d6]">
+            <span className="rounded-full border border-[#fff7d6]/30 bg-[#fff7d6]/12 px-4 py-2 text-[#fff7d6] sm:px-5 sm:py-2.5">
               Open Source, Open Weights
+            </span>
+            <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 sm:px-5 sm:py-2.5">
+              Consumer AI Video
             </span>
           </div>
 
-          <h1 className="max-w-4xl text-balance text-4xl font-semibold leading-[1.02] tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            Hey Superaffective Fans,
+          <h1 className="max-w-4xl text-pretty text-4xl font-semibold leading-[1.04] tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+            Introducing Supa AI: Generative AI Video For Millennials And Gen Z
           </h1>
 
-          <div className="mt-10 text-lg leading-9 text-white/84 sm:text-xl sm:leading-10 md:text-[1.35rem] md:leading-[2.35rem] [&_p+p]:pt-10 [&_p]:max-w-[68ch]">
-            <p>
-              It’s your boy Josh Stroud with the latest and greatest in AI technology, built just
-              for you :)
-            </p>
-            <p>
-              With great technology comes great responsibility - We’re tested this AI technology for
-              2 years with a seasoned team of AI / ML experts, UI / UX designers, and Distributed
-              Systems engineers. Our AI technology is safe, and ready for the world - Here’s to
-              looking at you,{' '}
-              <InlineLink href="https://www.anthropic.com/glasswing">Anthropic Mythos</InlineLink>{' '}
-              :)
-            </p>
-            <p>
-              With great technology, Superaffective AI is ready to take on the world - Are you ready
-              to create Video that you can post, For Free, to YouTube, Instagram, TikTok, and your
-              favorite video and music streaming platforms? Are you ready to be Inspired,
-              Transformed, and Excited To Write Video Prompts? Are you ready to use Simple Plain
-              Language to Create Videos That Inspire? Join Superaffective AI and Change The World :)
-            </p>
-          </div>
+          <p className="max-w-3xl text-lg leading-9 text-white/84 sm:text-xl sm:leading-10 md:text-[1.35rem] md:leading-[2.35rem]">
+            Superaffective AI has created the world&apos;s first Open Source, Open Weights
+            Generative AI Video Model &quot;Supa AI&quot;. Supa AI can generate videos up to 1 hour
+            on a Nvidia Hopper H100 GPU.
+          </p>
 
-          <div className="mt-12">
+          <div className="pt-2 sm:pt-3 md:pt-4">
             <CtaButtons align="center" />
           </div>
         </article>
       </div>
     </section>
+  );
+}
+
+function FounderOpeningSection() {
+  return (
+    <SectionShell className="bg-[#120726]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,110,173,0.14),transparent_26%),radial-gradient(circle_at_bottom_right,rgba(126,242,238,0.12),transparent_28%)]" />
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
+        <ContentCard title="Hey Superaffective Fans,">
+          <p>
+            It’s your boy Josh Stroud with the latest and greatest in AI technology, built just for
+            you :)
+          </p>
+          <p>
+            With great technology comes great responsibility - We’re tested this AI technology for 2
+            years with a seasoned team of AI / ML experts, UI / UX designers, and Distributed
+            Systems engineers. Our AI technology is safe, and ready for the world - Here’s to looking
+            at you,{' '}
+            <InlineLink href="https://www.anthropic.com/glasswing">Anthropic Mythos</InlineLink> :)
+          </p>
+          <p>
+            With great technology, Superaffective AI is ready to take on the world - Are you ready to
+            create Video that you can post, For Free, to YouTube, Instagram, TikTok, and your
+            favorite video and music streaming platforms? Are you ready to be Inspired, Transformed,
+            and Excited To Write Video Prompts? Are you ready to use Simple Plain Language to Create
+            Videos That Inspire? Join Superaffective AI and Change The World :)
+          </p>
+        </ContentCard>
+      </div>
+    </SectionShell>
   );
 }
 
@@ -239,33 +258,77 @@ function WelcomeSection() {
   );
 }
 
+function TrailerVideoSection() {
+  return (
+    <SectionShell className="bg-[#120a2b]">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(126,242,238,0.12),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,110,173,0.16),transparent_24%)]" />
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
+        <div className="mx-auto mb-10 flex max-w-5xl flex-col items-center text-center">
+          <p className="text-base font-medium uppercase tracking-[0.22em] text-white/58 sm:text-lg">
+            Pokémon 30th Anniversary
+          </p>
+          <h2 className="mt-5 w-full text-center text-3xl font-semibold leading-tight tracking-[-0.03em] text-white text-pretty sm:text-4xl md:text-5xl">
+            Supa AI Generative AI Video Millennial And Gen Z Launch Anthem Trailer
+          </h2>
+        </div>
+        <div className="rounded-[2rem] border border-white/10 bg-black/20 p-3 shadow-[0_18px_90px_rgba(0,0,0,0.36)] backdrop-blur-[8px] sm:p-4 md:p-5">
+          <div className="overflow-hidden rounded-[1.5rem] border border-white/8 bg-black shadow-[inset_0_1px_0_rgba(255,255,255,0.05)]">
+            <div className="relative w-full overflow-hidden pt-[56.25%]">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube.com/embed/ALoaoEhllak"
+                title="Supa AI Generative AI Video Millennial And Gen Z Launch Anthem Trailer"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </SectionShell>
+  );
+}
+
 function PricingSection() {
   return (
     <SectionShell className="bg-[#140a30]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,247,214,0.1),transparent_26%),radial-gradient(circle_at_bottom_left,rgba(126,242,238,0.12),transparent_26%)]" />
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-5">
-        <article className="rounded-[2rem] border border-white/10 bg-black/22 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.24)] backdrop-blur-[8px] sm:p-8 lg:p-10">
-          <p className="text-base font-medium uppercase tracking-[0.22em] text-white/58 sm:text-lg">
-            Consumer plan
-          </p>
-          <p className="mt-4 text-5xl font-semibold tracking-[-0.05em] text-white">$20</p>
-          <p className="mt-6 max-w-[72ch] text-lg leading-9 text-white/72 sm:text-xl sm:leading-10">
-            Superaffective AI users on the Consumer plan can generate videos up to 60 seconds in
-            length an unlimited number of times.
-          </p>
-        </article>
-        <article className="rounded-[2rem] border border-white/10 bg-black/22 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.24)] backdrop-blur-[8px] sm:p-8 lg:p-10">
-          <p className="text-base font-medium uppercase tracking-[0.22em] text-white/58 sm:text-lg">
-            Creator plan
-          </p>
-          <p className="mt-4 text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
-            $5,000 to $10,000
-          </p>
-          <p className="mt-6 max-w-[72ch] text-lg leading-9 text-white/72 sm:text-xl sm:leading-10">
-            Superaffective AI Creators can create unlimited videos up to 1 hour in length, perfect
-            for social media like YouTube and video streaming services.
-          </p>
-        </article>
+      <div className="relative z-10 mx-auto w-full max-w-6xl rounded-[2rem] border border-white/10 bg-black/20 p-6 shadow-[0_18px_90px_rgba(0,0,0,0.28)] backdrop-blur-[8px] sm:p-8 md:p-10 lg:p-12">
+        <div className="mx-auto mb-5 max-w-4xl text-center">
+          <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] text-white sm:text-4xl md:text-5xl">
+            Pricing
+          </h2>
+        </div>
+        <div className="mt-10 grid gap-5">
+          <article className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-black/22 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.24)] backdrop-blur-[8px] transition duration-200 hover:-translate-y-1 hover:border-[#fff7d6]/45 hover:bg-[rgba(255,247,214,0.08)] hover:shadow-[0_22px_86px_rgba(255,247,214,0.12),0_18px_70px_rgba(0,0,0,0.28)] sm:p-8 lg:p-10">
+            <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,247,214,0.78),transparent)] opacity-0 transition group-hover:opacity-100" />
+            <p className="text-base font-medium uppercase tracking-[0.22em] text-white/58 sm:text-lg">
+              Consumer plan
+            </p>
+            <p className="mt-4 text-5xl font-semibold tracking-[-0.05em] text-white">
+              $20
+            </p>
+            <p className="mt-6 max-w-[72ch] text-lg leading-9 text-white/72 sm:text-xl sm:leading-10">
+              Superaffective AI users on the Consumer plan can generate videos up to 60 seconds in
+              length an unlimited number of times.
+            </p>
+          </article>
+          <article className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-black/22 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.24)] backdrop-blur-[8px] transition duration-200 hover:-translate-y-1 hover:border-[#fff7d6]/45 hover:bg-[rgba(255,247,214,0.08)] hover:shadow-[0_22px_86px_rgba(255,247,214,0.12),0_18px_70px_rgba(0,0,0,0.28)] sm:p-8 lg:p-10">
+            <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,247,214,0.78),transparent)] opacity-0 transition group-hover:opacity-100" />
+            <p className="text-base font-medium uppercase tracking-[0.22em] text-white/58 sm:text-lg">
+              Creator plan
+            </p>
+            <p className="mt-4 text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
+              $5,000 to $10,000
+            </p>
+            <p className="mt-6 max-w-[72ch] text-lg leading-9 text-white/72 sm:text-xl sm:leading-10">
+              Superaffective AI Creators can create unlimited videos up to 1 hour in length, perfect
+              for social media like YouTube and video streaming services.
+            </p>
+          </article>
+        </div>
       </div>
     </SectionShell>
   );
@@ -288,7 +351,7 @@ function ModelSection() {
             <InlineLink href="https://openai.com/open-models/">OpenAI’s gpt-oss</InlineLink>,{' '}
             <InlineLink href="https://qwen.ai/">Alibaba’s Qwen</InlineLink>, and{' '}
             <InlineLink href="https://deepmind.google/models/gemma/">Google Gemma</InlineLink>. The
-            model runs on an Nvidia Hopper H100.
+            model runs on a Nvidia Hopper H100.
           </p>
           <div className="pt-8">
             <CtaButtons align="center" />
@@ -313,14 +376,14 @@ function ModelFeatureSection() {
           </h2>
         </div>
         <div className="mt-10 grid gap-5">
-          {['Open Source', 'Open Weights', 'Runs on an Nvidia Hopper H100 GPU'].map((label) => (
+          {['Open Source', 'Open Weights', 'Runs on a Nvidia Hopper H100 GPU'].map((label) => (
             <div
               key={label}
-              className="group relative overflow-hidden rounded-[1.5rem] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.13),rgba(255,255,255,0.045)_48%,rgba(126,242,238,0.08))] p-6 text-center shadow-[0_18px_70px_rgba(0,0,0,0.28),inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur-[12px] transition hover:-translate-y-0.5 hover:border-[#fff7d6]/35 hover:bg-white/10 sm:p-8"
+              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-black/22 p-6 text-center shadow-[0_18px_70px_rgba(0,0,0,0.24),inset_0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-[10px] transition duration-200 hover:-translate-y-1 hover:border-[#fff7d6]/45 hover:bg-[rgba(255,247,214,0.08)] hover:shadow-[0_22px_86px_rgba(255,247,214,0.12),0_18px_70px_rgba(0,0,0,0.28)] sm:p-8 lg:p-10"
             >
-              <div className="absolute inset-x-6 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,247,214,0.75),transparent)]" />
-              <div className="absolute -right-12 -top-12 h-28 w-28 rounded-full bg-[#7ef2ee]/10 blur-2xl transition group-hover:bg-[#fff7d6]/14" />
-              <p className="relative z-10 text-xl font-semibold tracking-[-0.02em] text-white drop-shadow-[0_1px_18px_rgba(255,255,255,0.1)] sm:text-2xl">
+              <div className="absolute inset-x-8 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,247,214,0.78),transparent)] opacity-0 transition group-hover:opacity-100" />
+              <div className="absolute -right-10 -top-14 h-32 w-32 rounded-full bg-white/[0.04] blur-2xl transition group-hover:bg-[#fff7d6]/10" />
+              <p className="relative z-10 text-2xl font-semibold tracking-[-0.03em] text-white sm:text-3xl">
                 {label}
               </p>
             </div>
@@ -397,7 +460,7 @@ function VideoSection() {
             KPop Demon Hunters
           </p>
           <h2 className="mt-5 w-full text-center text-3xl font-semibold leading-tight tracking-[-0.03em] text-white text-pretty sm:text-4xl md:text-5xl">
-            Watch The Superaffective &quot;KPop Demon Hunters&quot; EDM Festival Anthem Remix On YouTube
+            Watch The Superaffective &quot;KPop Demon Hunters&quot; EDM Festival Anthem Remix
           </h2>
         </div>
         <div className="rounded-[2rem] border border-white/10 bg-black/20 p-3 shadow-[0_18px_90px_rgba(0,0,0,0.36)] backdrop-blur-[8px] sm:p-4 md:p-5">
@@ -502,7 +565,7 @@ function CompanySection() {
             <InlineLink href="https://huggingface.co/">Hugging Face</InlineLink>.{' '}
             <InlineLink href={modelHref}>Find the model weights here.</InlineLink> The Supa AI
             model can generate up to 1 hour of consistent, high quality video, music and audio,
-            images, and text, and runs on an{' '}
+            images, and text, and runs on a{' '}
             <InlineLink href="https://www.nvidia.com/">Nvidia</InlineLink> Hopper H100 GPU.
           </p>
           <p>
@@ -539,6 +602,7 @@ function YouTubeSection() {
   const socialCards = [
     { label: 'YouTube', href: 'https://www.youtube.com/@SuperaffectiveAI' },
     { label: 'Linktree', href: 'https://linktr.ee/superaffectiveai' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/in/joshstroud' },
     { label: 'TikTok', href: 'https://www.tiktok.com/@SuperaffectiveAI' },
     { label: 'Instagram', href: 'https://www.instagram.com/SuperaffectiveAI' },
     { label: 'Telegram', href: 'https://t.me/SuperaffectiveAI' },
@@ -615,10 +679,12 @@ function YouTubeSection() {
               href={card.href}
               target="_blank"
               rel="noreferrer"
-              className="group flex min-h-24 items-center justify-between gap-4 rounded-[1.5rem] border border-white/10 bg-black/22 px-6 py-6 text-xl font-semibold tracking-[-0.02em] text-white shadow-[0_14px_54px_rgba(0,0,0,0.18)] transition hover:-translate-y-1 hover:border-[#ff6ead]/45 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7ef2ee] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170d34] sm:min-h-28 sm:px-7 sm:py-7 sm:text-2xl"
+              className="group relative flex min-h-24 items-center justify-between gap-4 overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/22 px-6 py-6 text-xl font-semibold tracking-[-0.02em] text-white shadow-[0_14px_54px_rgba(0,0,0,0.18)] backdrop-blur-[8px] transition duration-200 hover:-translate-y-1 hover:border-[#fff7d6]/38 hover:bg-[rgba(255,247,214,0.045)] hover:shadow-[0_22px_86px_rgba(255,247,214,0.09),0_18px_70px_rgba(0,0,0,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7ef2ee] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170d34] sm:min-h-28 sm:px-7 sm:py-7 sm:text-2xl"
             >
-              <span>{card.label}</span>
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/8 text-lg text-white/70 transition group-hover:border-[#ff6ead]/50 group-hover:text-[#ff6ead]">
+              <div className="absolute inset-x-7 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,247,214,0.78),transparent)] opacity-0 transition group-hover:opacity-100" />
+              <div className="absolute -right-10 -top-14 h-32 w-32 rounded-full bg-white/[0.035] blur-2xl transition group-hover:bg-[#fff7d6]/7" />
+              <span className="relative z-10">{card.label}</span>
+              <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/12 bg-white/8 text-lg text-white/70 transition group-hover:border-[#fff7d6]/50 group-hover:text-[#fff7d6]">
                 +
               </span>
             </a>
@@ -657,21 +723,21 @@ function FounderLetterSection() {
           <p>
             Superaffective AI is SO excited to meet Generative AI Video Fans and Creators from
             around the world. Generative AI Video is is here, and it’s Open Source :){' '}
-            <InlineLink href="https://youtu.be/egx0dDz8DXk">
+            <InlineLink href="https://x.com/soraofficialapp/status/2036546752535470382?s=20">
               OpenAI’s Generative AI Video App Sora
             </InlineLink>{' '}
             might have shut down, but Superaffective AI is just getting started :)
           </p>
           <p>
-            Superaffective fans, this is your friendly Superaffective AI CEO Josh Stroud signing.
-            “You Stay Classy, San Diego”. And - I wrote this whole blog post myself - Let’s see{' '}
+            Superaffective fans, this is your friendly Superaffective AI CEO Josh Stroud signing
+            off. “You Stay Classy, San Diego”. And - I wrote this whole blog post myself - Let’s see{' '}
             <InlineLink href="https://openai.com/index/accelerating-the-next-phase-ai/">
               Sam Altman do that
             </InlineLink>{' '}
             :)
           </p>
           <div className="pt-6 text-lg leading-7 text-white/84 sm:text-xl sm:leading-8">
-            <div>– Josh Stroud</div>
+            <div>-- Josh Stroud</div>
             <div>
               CEO, <InlineLink href="https://superaffective.ai/">Superaffective AI</InlineLink>
             </div>
@@ -692,8 +758,10 @@ export function SupaAiPage() {
   return (
     <main className="bg-[#120726]">
       <HeroSection />
+      <FounderOpeningSection />
       <LaunchActionsSection />
       <WelcomeSection />
+      <TrailerVideoSection />
       <PricingSection />
       <ModelSection />
       <ModelFeatureSection />
