@@ -26,14 +26,17 @@ app/
   globals.css
   layout.tsx
   page.tsx
+  supa-ai/page.tsx
 components/
   cta-section.tsx
   hero-section.tsx
+  supa-ai/supa-ai-page.tsx
   ui/button.tsx
 lib/
   cn.ts
 public/
   images/hero/superaffective-hero-pichu.jpg
+  images/supa-ai/
 ```
 
 ## Deployment to Vercel
@@ -54,7 +57,6 @@ No environment variables are required for this first version.
 ## Future improvements
 
 - Wire the CTA to a waitlist, signup form, or `/join` page
-- Add Vercel Analytics and Speed Insights
 - Add favicon, app icons, and a custom OG image
 - Add additional homepage sections as the brand evolves
 
@@ -62,4 +64,6 @@ No environment variables are required for this first version.
 
 - No secrets are committed
 - `.env*.local` is ignored by `.gitignore`
-- No third-party scripts are included in this version
+- Production security headers are configured in `next.config.ts`
+- YouTube embeds use the privacy-enhanced `youtube-nocookie.com` host
+- Third-party runtime code is limited to Vercel Analytics and embedded YouTube videos

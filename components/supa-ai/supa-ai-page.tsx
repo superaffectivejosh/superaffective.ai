@@ -74,7 +74,7 @@ function InlineLink({ children, href }: InlineLinkProps) {
     <a
       href={href}
       target={isExternal ? '_blank' : undefined}
-      rel={isExternal ? 'noreferrer' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       className="supa-ai-link"
     >
       {children}
@@ -96,7 +96,7 @@ function CtaButtons({ align = 'left' }: { align?: 'left' | 'center' }) {
       <a
         href={modelHref}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/15 bg-white/10 px-8 py-4 text-base font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/16 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7ef2ee] focus-visible:ring-offset-2 focus-visible:ring-offset-[#120726]"
       >
         Download The Model
@@ -208,7 +208,7 @@ function LaunchActionsSection() {
         <a
           href={modelHref}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="group rounded-[2rem] border border-white/10 bg-black/22 p-6 shadow-[0_18px_70px_rgba(0,0,0,0.22)] backdrop-blur-[8px] transition hover:-translate-y-1 hover:border-[#7ef2ee]/40 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7ef2ee] focus-visible:ring-offset-2 focus-visible:ring-offset-[#120726] sm:p-8"
         >
           <p className="text-base font-medium uppercase tracking-[0.22em] text-white/58 sm:text-lg">
@@ -276,9 +276,10 @@ function TrailerVideoSection() {
             <div className="relative w-full overflow-hidden pt-[56.25%]">
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/ALoaoEhllak"
+                src="https://www.youtube-nocookie.com/embed/ALoaoEhllak"
                 title="Supa AI Generative AI Video Millennial And Gen Z Launch Anthem Trailer"
                 loading="lazy"
+                sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
@@ -468,9 +469,10 @@ function VideoSection() {
             <div className="relative w-full overflow-hidden pt-[56.25%]">
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src="https://www.youtube.com/embed/nJGW56TjFLM"
+                src="https://www.youtube-nocookie.com/embed/nJGW56TjFLM"
                 title="KPop Demon Hunter EDM Festival Anthem Remix Video On Superaffective AI YouTube"
                 loading="lazy"
+                sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen
@@ -678,7 +680,7 @@ function YouTubeSection() {
               key={card.label}
               href={card.href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="group relative flex min-h-24 items-center justify-between gap-4 overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/22 px-6 py-6 text-xl font-semibold tracking-[-0.02em] text-white shadow-[0_14px_54px_rgba(0,0,0,0.18)] backdrop-blur-[8px] transition duration-200 hover:-translate-y-1 hover:border-[#fff7d6]/38 hover:bg-[rgba(255,247,214,0.045)] hover:shadow-[0_22px_86px_rgba(255,247,214,0.09),0_18px_70px_rgba(0,0,0,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7ef2ee] focus-visible:ring-offset-2 focus-visible:ring-offset-[#170d34] sm:min-h-28 sm:px-7 sm:py-7 sm:text-2xl"
             >
               <div className="absolute inset-x-7 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(255,247,214,0.78),transparent)] opacity-0 transition group-hover:opacity-100" />
